@@ -22,7 +22,7 @@ jobs:
           key: ${{ secrets.MACOS_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            cd /home/jack/sprite
+            cd /home/jack/work/frontend/sprite
             git pull origin main
             docker compose down
             docker compose up --build -d
