@@ -12,7 +12,7 @@ COPY package*.json ./
 RUN npm ci --only=production
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
-COPY next.config.js ./
+COPY next.config.ts ./
 
 EXPOSE 3000
 CMD ["npm", "start"]
