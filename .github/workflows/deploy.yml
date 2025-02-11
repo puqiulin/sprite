@@ -3,7 +3,7 @@ name: Deploy Next.js App to VPS with Docker
 on:
   push:
     branches:
-      - main # Trigger deployment when code is pushed to the main branch
+      - main
 
 jobs:
   deploy:
