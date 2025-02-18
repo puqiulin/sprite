@@ -1,14 +1,17 @@
 "use client";
 
 import ImageCard from "@/components/image-card";
+import { getGreeting } from "@/lib/utils";
 // import { ModeToggle } from "@/components/mode-toggle";
 
 const Home = () => {
+  const greeting = getGreeting();
+
   return (
     <div className="flex flex-col ">
       <div className="w-full p-4 flex backdrop-blur-lg dark:bg-black/50 fixed justify-between z-50 items-center">
-        <div className="text-6xl font-semibold text-red-300">
-          情人节快乐！小王王～
+        <div className="text-2xl font-semibold text-red-300">
+          {greeting}~，今天也是充满希望的一天🥳
         </div>
         {/* <ModeToggle /> */}
       </div>
