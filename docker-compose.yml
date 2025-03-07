@@ -3,7 +3,7 @@ services:
     container_name: sprite
     build: .
     ports:
-      - "3000:3000"
+      - "3001:3001"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
