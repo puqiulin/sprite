@@ -12,7 +12,7 @@ RUN npm install -g bun
 WORKDIR /app
 
 # --- FIX 2: Copy bun.lockb ---
-COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* bun.lockb* ./
+COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* bun.lockb* bun.lock* ./
 
 # --- FIX 3: Add logic to check for bun.lockb and install ---
 RUN \
