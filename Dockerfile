@@ -40,7 +40,8 @@ RUN \
   if [ -f yarn.lock ]; then yarn run build; \
   elif [ -f package-lock.json ]; then npm run build; \
   elif [ -f pnpm-lock.yaml ]; then corepack enable pnpm && pnpm run build; \
-  elif [ -f bun.lockb ]; then bun run build; \
+#  elif [ -f bun.lockb ]; then bun run build; \
+  elif [ -f bun.lock ]; then bun run build; \
   else echo "Lockfile not found." && exit 1; \
   fi
 
